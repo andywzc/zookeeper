@@ -23,7 +23,7 @@ public class TestZookeeper {
             node = ZKUtil.getNode(path);
             logger.debug("修改后  ： " + node);
 
-            //ZKUtil.delNode(path, 1);
+            ZKUtil.delNode(path, 1);
 
         } catch (Exception e) {
             logger.error(e, e.getCause());
